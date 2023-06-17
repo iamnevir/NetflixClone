@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:NetflixClone.Models"
+             xmlns:controls="clr-namespace:NetflixClone.Controls"
+             x:Name="this"
+             x:Class="NetflixClone.Controls.MovieRow">
+    <VerticalStackLayout BackgroundColor="Black"
+                         BindingContext="{x:Reference this}">
+        <Label 
+            Text="{Binding Heading}"
+            FontAttributes="Bold"
+            FontSize="20"           
+            VerticalOptions="Center" 
+            HorizontalTextAlignment="Start"
+            TextColor="White"
+            Margin="15,15,0,8"/>
+        <CollectionView ItemsSource="{Binding Movies}">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Horizontal"
+                                   ItemSpacing="5"></LinearItemsLayout>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Media">
+                    <Border StrokeShape="RoundRectangle 5"
+                            Stroke="Black"
+                            StrokeThickness="1"
+                            BackgroundColor="Black">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type controls:MovieRow}},Path=MediaDetailsCommand}"
+                                                  CommandParameter="{Binding}"/>
+                        </Border.GestureRecognizers>
+                    <Grid>
+                            <Image Aspect="AspectFill"
+                           HeightRequest="150"
+                           WidthRequest="120"
+                               IsVisible="{Binding Source={RelativeSource AncestorType={x:Type controls:MovieRow}},Path=IsNotLarge}">
+                            <Image.Source>
+                                <UriImageSource Uri="{Binding ThumbnailSmall}"></UriImageSource>
+                            </Image.Source>
+                        </Image>
+                        <Image Aspect="AspectFill"
+                               
+                           HeightRequest="200"
+                           WidthRequest="150"
+                               IsVisible="{Binding Source={RelativeSource AncestorType={x:Type controls:MovieRow}},Path=IsLarge}">
+                            <Image.Source>
+                                <UriImageSource Uri="{Binding ThumbnailSmall}"></UriImageSource>
+                            </Image.Source>
+                        </Image>
+                    </Grid>
+                </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentView>

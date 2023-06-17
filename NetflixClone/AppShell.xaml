@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="NetflixClone.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:NetflixClone.Pages"
+    Shell.TabBarTitleColor="White"
+    Shell.TabBarUnselectedColor="#545454"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.TabBarBackgroundColor="Black">
+    <TabBar>
+        <ShellContent
+                Title="Trang chủ"
+                Icon="hometab"
+                ContentTemplate="{DataTemplate pages:MainPage}"
+                Route="MainPage" />
+        <ShellContent
+                Title="Mới &amp; Hot"
+                Icon="brand_netflix"
+                ContentTemplate="{DataTemplate pages:MainPage}"
+                Route="MainPage2" />
+
+        <ShellContent
+                Title="Tệp tải xuông"
+                Icon="download"
+                ContentTemplate="{DataTemplate pages:MainPage}"
+                Route="MainPage3" />
+
+
+    </TabBar>
+   
+
+</Shell>

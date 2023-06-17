@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="NetflixClone.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:NetflixClone.Controls"
+    xmlns:vm="clr-namespace:NetflixClone.ViewModels"
+    BackgroundColor="Black"
+    Shell.NavBarIsVisible="False"
+    x:DataType="vm:HomeViewModel">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="MenuLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid Margin="0" Padding="0">
+
+        <ScrollView BackgroundColor="Black">
+            <VerticalStackLayout>
+                <Grid HeightRequest="500">
+                    <Image
+                        Aspect="Center"
+                        HeightRequest="350"
+                        Opacity="0.8"
+                        VerticalOptions="Start">
+                        <Image.Source>
+                            <UriImageSource Uri="{Binding TrendingMovie.Thumbnail}" />
+                        </Image.Source>
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding SelectMediaCommand}"
+                                                  CommandParameter="{Binding TrendingMovie}"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Grid
+                        Margin="0,50,0,0"
+                        HeightRequest="40"
+                        VerticalOptions="Start"
+                        >
+                        <FlexLayout JustifyContent="SpaceAround" VerticalOptions="Center">
+                            <Label Style="{StaticResource MenuLabel}" Text="Phim T.hình" />
+                            <Label Style="{StaticResource MenuLabel}" Text="Phim" />
+                            <Label Style="{StaticResource MenuLabel}" Text="Thể loại">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="DanhMucPhim_Tapped"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+
+                        </FlexLayout>
+                    </Grid>
+
+                    <HorizontalStackLayout
+                        HorizontalOptions="Center"
+                        Spacing="50"
+                        VerticalOptions="End">
+                        <VerticalStackLayout>
+                            <Label
+                                Margin="0,0,0,-20"
+                                FontSize="35"
+                                HorizontalTextAlignment="Center"
+                                Text="+" />
+                            <Label
+                                FontSize="10"
+                                HorizontalTextAlignment="Center"
+                                Text="Danh sách" />
+                        </VerticalStackLayout>
+                        <Border
+                            BackgroundColor="White"
+                            HeightRequest="45"
+                            Padding="5,5,20,5"
+                            StrokeShape="RoundRectangle 5">
+                            <HorizontalStackLayout>
+                                <Image
+                                    Margin="0,0,10,0"
+                                    Aspect="AspectFit"
+                                    HeightRequest="25"
+                                    Source="play"
+                                    WidthRequest="30" />
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="16"
+                                    Text="Phát"
+                                    TextColor="Black"
+                                    VerticalOptions="Center" />
+                            </HorizontalStackLayout>
+
+                        </Border>
+                        <VerticalStackLayout Padding="0,5,0,0">
+                            <Grid HorizontalOptions="Center">
+                                <Ellipse
+                                    HeightRequest="20"
+                                    Stroke="White"
+                                    StrokeThickness="2"
+                                    WidthRequest="20" />
+                                <Label
+                                    FontAttributes="Bold"
+                                    HorizontalOptions="Center"
+                                    Padding="0,2,0,0"
+                                    Text="i"
+                                    VerticalTextAlignment="Center" />
+                            </Grid>
+                            <Label
+                                FontSize="10"
+                                HorizontalOptions="Center"
+                                Text="Thông tin" />
+                            <VerticalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding SelectMediaCommand}"
+                                                  CommandParameter="{Binding TrendingMovie}"/>
+                            </VerticalStackLayout.GestureRecognizers>
+                        </VerticalStackLayout>
+                    </HorizontalStackLayout>
+                </Grid>
+                <controls:MovieRow
+                    Heading="Hiện đang thịnh hành"
+                    IsLarge="False"
+                    Movies="{Binding TopRated}" 
+                    MediaSelected="MovieRow_MediaSelected"/>
+                <controls:MovieRow
+                    Heading="Phổ biển trên netflix"
+                    IsLarge="True"
+                    Movies="{Binding NetflixOriginals}"
+                    MediaSelected="MovieRow_MediaSelected"/>
+                <controls:MovieRow
+                    Heading="Lựa chọn hàng đầu"
+                    IsLarge="False"
+                    Movies="{Binding Trending}"
+                    MediaSelected="MovieRow_MediaSelected"/>
+                <controls:MovieRow
+                    Heading="Phim hành động"
+                    IsLarge="False"
+                    Movies="{Binding ActionMovies}"
+                    MediaSelected="MovieRow_MediaSelected"/>
+                <controls:MovieRow
+                    Heading="Sắp ra mắt"
+                    IsLarge="False"
+                    Movies="{Binding UpComing}"
+                    MediaSelected="MovieRow_MediaSelected"/>
+                <controls:MovieRow
+                    Heading="Phát sóng hôm nay"
+                    IsLarge="False"
+                    Movies="{Binding AiringToday}"
+                    MediaSelected="MovieRow_MediaSelected"/>
+                <controls:MovieRow
+                    Heading="Chương trình T.hình phổ biến"
+                    IsLarge="False"
+                    Movies="{Binding TvPopular}"
+                    MediaSelected="MovieRow_MediaSelected"/>
+                <controls:MovieRow
+                    Heading="Chương trình T.hình được đánh giá cao"
+                    IsLarge="False"
+                    Movies="{Binding TvTopRated}"
+                    MediaSelected="MovieRow_MediaSelected"/>
+                <controls:MovieRow
+                    Heading="Đang chiếu rạp"
+                    IsLarge="False"
+                    Movies="{Binding NowPlaying}"
+                    MediaSelected="MovieRow_MediaSelected"/>
+                <controls:MovieRow
+                    Heading="Chương trình T.hình sắp ra mắt"
+                    IsLarge="False"
+                    Movies="{Binding SapChieu}"
+                    MediaSelected="MovieRow_MediaSelected"/>
+            </VerticalStackLayout>
+
+        </ScrollView>
+        <Grid HeightRequest="35" VerticalOptions="Start"
+             >
+            <FlexLayout JustifyContent="SpaceBetween">
+                <Image
+                    Margin="-5,0,0,0"
+                    Aspect="AspectFit"
+                    HeightRequest="70"
+                    Source="ntflx_logo"
+                    VerticalOptions="Start"
+                    WidthRequest="70" />
+                <HorizontalStackLayout Margin="50,10,0,0" 
+                                       VerticalOptions="Center">
+                    <ImageButton
+                        Aspect="AspectFill"
+                        HeightRequest="25"
+                        Source="search.png"
+                        WidthRequest="25" />
+                    <ImageButton
+                        Margin="30,0,0,0"
+                        Aspect="AspectFill"
+                        HeightRequest="25"
+                        Source="user.png"
+                        WidthRequest="25" />
+                    <Border
+                        Margin="25,0,0,0"
+                        BackgroundColor="Red"
+                        HeightRequest="38"
+                        Padding="15,5,20,5"
+                        StrokeShape="RoundRectangle 5">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            Text="Nâng cấp"
+                            TextColor="White"
+                            VerticalOptions="Center" />
+                    </Border>
+                </HorizontalStackLayout>
+            </FlexLayout>
+        </Grid>
+        <controls:MovieDetailBox Media="{Binding SelectedMedia}" 
+                                 VerticalOptions="End"
+                                 IsVisible="{Binding ShowMovieDetail}"
+                                 Closed="MovieDetailBox_Closed"/>
+
+    </Grid>
+
+</ContentPage>
