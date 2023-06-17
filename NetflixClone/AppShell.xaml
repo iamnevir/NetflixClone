@@ -17,7 +17,7 @@
         <ShellContent
                 Title="Mới &amp; Hot"
                 Icon="brand_netflix"
-                ContentTemplate="{DataTemplate pages:MainPage}"
+                ContentTemplate="{DataTemplate pages:NewHotPage}"
                 Route="MainPage2" />
 
         <ShellContent

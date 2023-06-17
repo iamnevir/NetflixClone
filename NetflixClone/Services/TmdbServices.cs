@@ -87,9 +87,13 @@ public static class TmdbUrls
     public const string AiringToday = "3/tv/airing_today?language=vi-EN";
 
     public const string TvPopular = "3/tv/popular?language=vi-EN";
+
     public const string TvTopRated = "3/tv/top_rated?language=vi-EN";
+
     public const string NowPlaying = "3/movie/now_playing?language=vi-EN";
+
     public const string SapChieu = "3/tv/on_the_air?language=vi-EN";
+
 
     public static string GetTrailers(int movieId, string type = "movie") => $"3/{type ?? "movie"}/{movieId}/videos?language=en-US";
     public static string GetMovieDetails(int movieId, string type = "movie") => $"3/{type ?? "movie"}/{movieId}?language=en-US";

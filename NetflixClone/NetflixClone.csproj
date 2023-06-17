@@ -49,36 +49,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Fonts\Poppins-Regular.ttf" />
-	  <None Remove="Resources\Fonts\Poppins-SemiBold.ttf" />
-	  <None Remove="Resources\Images\brand_netflix.svg" />
-	  <None Remove="Resources\Images\close.svg" />
-	  <None Remove="Resources\Images\closee.png" />
-	  <None Remove="Resources\Images\download.svg" />
-	  <None Remove="Resources\Images\explore.svg" />
-	  <None Remove="Resources\Images\fire.png" />
-	  <None Remove="Resources\Images\game.svg" />
-	  <None Remove="Resources\Images\home.svg" />
-	  <None Remove="Resources\Images\hometab.svg" />
-	  <None Remove="Resources\Images\info.png" />
-	  <None Remove="Resources\Images\info.svg" />
-	  <None Remove="Resources\Images\info_circle.svg" />
-	  <None Remove="Resources\Images\library.svg" />
-	  <None Remove="Resources\Images\like.svg" />
-	  <None Remove="Resources\Images\movie.svg" />
-	  <None Remove="Resources\Images\notification_bell.svg" />
-	  <None Remove="Resources\Images\ntflx_logo.png" />
-	  <None Remove="Resources\Images\play.svg" />
-	  <None Remove="Resources\Images\plus.svg" />
-	  <None Remove="Resources\Images\popcorn.png" />
-	  <None Remove="Resources\Images\rate.svg" />
-	  <None Remove="Resources\Images\search.svg" />
-	  <None Remove="Resources\Images\share.svg" />
-	  <None Remove="Resources\Images\user.svg" />
-	  <None Remove="Resources\Images\userr.png" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="5.2.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
@@ -101,6 +71,10 @@
 	  <MauiXaml Update="Pages\NewHotPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Platforms\Android\Resources\" />
 	</ItemGroup>
 
 </Project>
