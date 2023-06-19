@@ -36,6 +36,7 @@ public partial class DetailViewModel: ObservableObject
         IsBusy = true;
         try
         {
+           
             var trailerTeaserTask =  _tmdbServices.GetTrailersAsync(Media.Id, Media.MediaType);
             var detailsTask =  _tmdbServices.GetMediaDetailsAsync(Media.Id, Media.MediaType);
 
@@ -83,5 +84,5 @@ public partial class DetailViewModel: ObservableObject
     }
     [RelayCommand]
     void SetMainTrailer(string vdkey)=> MainTrailerUrl = GenerateYtbUrl(vdkey);
-    static string GenerateYtbUrl(string key) => $"https://www.youtube.com/embed/{key}";
+    public static string GenerateYtbUrl(string key) => $"https://www.youtube.com/embed/{key}";
 }

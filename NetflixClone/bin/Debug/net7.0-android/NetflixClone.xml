@@ -52,6 +52,18 @@
         <member name="P:NetflixClone.ViewModels.HomeViewModel.SelectMediaCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:NetflixClone.ViewModels.HomeViewModel.SelectMedia(NetflixClone.Models.Media)"/>.</summary>
         </member>
+        <member name="T:NetflixClone.ViewModels.NewHotViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:NetflixClone.ViewModels.NewHotViewModel.IsBusy">
+            <inheritdoc cref="F:NetflixClone.ViewModels.NewHotViewModel._isBusy"/>
+        </member>
+        <member name="P:NetflixClone.ViewModels.NewHotViewModel.MainTrailerUrl">
+            <inheritdoc cref="F:NetflixClone.ViewModels.NewHotViewModel._mainTrailerUrl"/>
+        </member>
+        <member name="P:NetflixClone.ViewModels.NewHotViewModel.Media">
+            <inheritdoc cref="F:NetflixClone.ViewModels.NewHotViewModel._media"/>
+        </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing)">
             <summary>
             Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color

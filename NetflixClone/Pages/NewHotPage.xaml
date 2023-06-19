@@ -2,11 +2,215 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NetflixClone.Pages.NewHotPage"
-             Title="NewHotPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:vm="clr-namespace:NetflixClone.ViewModels"
+             xmlns:services="clr-namespace:NetflixClone.Services"
+             Shell.BackgroundColor="Black"
+             BackgroundColor="Black"
+             Shell.NavBarIsVisible="False"
+             x:DataType="vm:NewHotViewModel">
+    <Grid Margin="0"
+          Padding="0">
+        <ScrollView>
+            <Grid>
+                <HorizontalStackLayout VerticalOptions="Start"
+                                   Margin="0,80,0,0"
+                                   BackgroundColor="Black">
+                    <Border Margin="15,0,0,0"
+                        StrokeShape="RoundRectangle 20"
+                        Stroke="Black"
+                        BackgroundColor="White"
+                        HeightRequest="42"
+                        x:Name="moivahotTabIni">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="MoiVaHot_Tab"/>
+                        </Border.GestureRecognizers>
+                        <HorizontalStackLayout>
+                            <Image Aspect="AspectFit"
+                               HeightRequest="20"
+                               Source="popcorn"
+                               WidthRequest="20" 
+                               Margin="15,0,5,0" />
+                            <Label Text="Sắp ra mắt"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               Margin="0,7,15,0"
+                               x:Name="MoiVaHot"/>
+                        </HorizontalStackLayout>
+                    </Border>
+                    <Border Margin="5,0,0,0"
+                        StrokeShape="RoundRectangle 20"
+                        BackgroundColor="Black"
+                        Stroke="Black"
+                        HeightRequest="42"
+                        x:Name="MoiNguoiDangXemTabIni">
+                        <Border.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="MoiNguoiDangXem_Tab"/>
+                        </Border.GestureRecognizers>
+                        <HorizontalStackLayout>
+                            <Image Aspect="AspectFit"
+                               HeightRequest="20"
+                               Source="fire"
+                               WidthRequest="20" 
+                               Margin="15,0,5,0" />
+                            <Label Text="Mọi người đang xem"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               Margin="0,7,15,0"
+                               x:Name="MoiNguoiDangXem"/>
+                        </HorizontalStackLayout>
+                    </Border>
+                </HorizontalStackLayout>
+                <VerticalStackLayout Grid.Row="1"
+                                     VerticalOptions="Start"
+                                     Margin="0,130,0,0">
+                    <Grid>
+                        <VerticalStackLayout>
+                            <HorizontalStackLayout Margin="0,0,0,10">
+                                <Image Aspect="AspectFit"
+                               HeightRequest="25"
+                               Source="popcorn"
+                               WidthRequest="25" 
+                               Margin="15,0,5,0" />
+                                <Label Text="Sắp ra mắt"
+                               FontSize="21"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               Margin="0,7,15,0"/>
+                            </HorizontalStackLayout>
+                            
+                            <Grid>
+                                <HorizontalStackLayout Grid.Column="0">
+                                    <VerticalStackLayout HorizontalOptions="Start"
+                                                          Margin="15,0,0,0"> 
+                                        <Label Text="Thg 6"
+                                               FontSize="15"
+                                               TextColor="Gray"/>
+                                        <Label Text="29"
+                                               FontSize="35"
+                                               FontAttributes="Bold"/>
+                                    </VerticalStackLayout>
+                                   
+                                    <VerticalStackLayout Margin="20,0,0,0"
+                                                         Grid.Row="0"
+                                                         Spacing="10"
+                                                         WidthRequest="300">
+                                        <WebView Source="{Binding Media.TrailerUrl}"
+                                                 HeightRequest="200"
+                                             WidthRequest="300"/>
+                                        <HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                <Label Text="THỢ SĂN QUÁI VẬT"
+                                                   FontSize="15"
+                                                   Margin="0,20,0,0"/>
+                                            </VerticalStackLayout>
+                                            <VerticalStackLayout Margin="20,0,0,0">
+                                                <Image Source="bell"
+                                                       Aspect="AspectFit"
+                                                       HeightRequest="40"
+                                                       WidthRequest="40"/>
+                                                <Label
+                                                FontSize="12"
+                                                HorizontalTextAlignment="Center"
+                                                TextColor="Gray"
+                                                Text="Nhắc tôi" />
+                                            </VerticalStackLayout>
+                                            <VerticalStackLayout Padding="30,8,0,0">
+                                                <Grid HorizontalOptions="Center"
+                                                      Margin="0,0,0,5">
+                                                    <Ellipse HeightRequest="22"
+                                                            Stroke="White"
+                                                            StrokeThickness="2"
+                                                            WidthRequest="22" />
+                                                    <Label FontAttributes="Bold"
+                                                            HorizontalOptions="Center"
+                                                            Padding="0,3,0,0"
+                                                            Text="i"
+                                                            VerticalTextAlignment="Center" />
+                                                </Grid>
+                                                <Label FontSize="12"
+                                                        TextColor="Gray"
+                                                        HorizontalOptions="Center"
+                                                        Text="Thông tin" />
+                                            </VerticalStackLayout>
+                                        </HorizontalStackLayout>
+                                        <Label Text="Tập 1 ra mắt ngày 29 tháng 6,Tập 2 ra mắt vào 27 tháng 7"
+                                               FontAttributes="Bold"
+                                               FontSize="16"/>
+                                        <Label Text="{Binding Media.Overview}"
+                                               TextColor="Gray"/>
+                                        <HorizontalStackLayout>
+                                            <CollectionView ItemsSource="{Binding Media.Genres_Name}">
+                                                <CollectionView.ItemsLayout>
+                                                    <LinearItemsLayout Orientation="Horizontal"
+                                                        ItemSpacing="5"></LinearItemsLayout>
+                                                </CollectionView.ItemsLayout>
+                                                <CollectionView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <HorizontalStackLayout>
+                                                            <Label Text="{Binding}"/>
+                                                            <Label Text="."
+                                                                   Margin="10,-10,5,0"
+                                                                   FontSize="20"
+                                                                   FontAttributes="Bold"/>
+                                                        </HorizontalStackLayout>
+                                                       
+                                                    </DataTemplate>
+                                                </CollectionView.ItemTemplate>
+                                            </CollectionView>
+                                           
+
+                                        </HorizontalStackLayout>
+
+                                    </VerticalStackLayout>
+                                    
+                                </HorizontalStackLayout>
+                                
+                            </Grid>
+                            
+                        </VerticalStackLayout>
+                    </Grid>
+
+                </VerticalStackLayout>
+
+            </Grid>
+
+
+
+        </ScrollView>
+        <Grid HeightRequest="50" 
+              VerticalOptions="Start">
+            <FlexLayout JustifyContent="SpaceBetween">
+                <Label Text="Mới &amp; Hot" 
+                       FontSize="25"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"
+                       Margin="10,10,0,0"/>
+                <HorizontalStackLayout Margin="0,10,10,0"
+                                       VerticalOptions="Center">
+                    <ImageButton
+                        Aspect="AspectFill"
+                        HeightRequest="50"
+                        Source="bell.png"
+                        WidthRequest="50" 
+                        Margin="0,0,10,0"/>
+                    <ImageButton
+                        Aspect="AspectFill"
+                        HeightRequest="25"
+                        Source="search.png"
+                        WidthRequest="25" 
+                        Margin="0,0,10,0"/>
+                    <ImageButton
+                        Margin="20,0,0,0"
+                        Aspect="AspectFill"
+                        HeightRequest="25"
+                        Source="avatar"
+                        WidthRequest="25"
+                        CornerRadius="4"/>
+
+                </HorizontalStackLayout>
+            </FlexLayout>
+        </Grid>
+    </Grid>
 </ContentPage>

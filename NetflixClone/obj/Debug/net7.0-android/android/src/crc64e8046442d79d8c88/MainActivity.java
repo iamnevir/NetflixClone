@@ -1,4 +1,4 @@
-package crc641892dc5216fe82f4;
+package crc64e8046442d79d8c88;
 
 
 public class MainActivity
@@ -12,7 +12,7 @@ public class MainActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("NetflixCloneMAUI.MainActivity, NetflixClone", MainActivity.class, __md_methods);
+		mono.android.Runtime.register ("NetflixClone.MainActivity, NetflixClone", MainActivity.class, __md_methods);
 	}
 
 
@@ -20,7 +20,7 @@ public class MainActivity
 	{
 		super ();
 		if (getClass () == MainActivity.class) {
-			mono.android.TypeManager.Activate ("NetflixCloneMAUI.MainActivity, NetflixClone", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("NetflixClone.MainActivity, NetflixClone", "", this, new java.lang.Object[] {  });
 		}
 	}
 
@@ -29,7 +29,7 @@ public class MainActivity
 	{
 		super (p0);
 		if (getClass () == MainActivity.class) {
-			mono.android.TypeManager.Activate ("NetflixCloneMAUI.MainActivity, NetflixClone", "System.Int32, System.Private.CoreLib", this, new java.lang.Object[] { p0 });
+			mono.android.TypeManager.Activate ("NetflixClone.MainActivity, NetflixClone", "System.Int32, System.Private.CoreLib", this, new java.lang.Object[] { p0 });
 		}
 	}
 

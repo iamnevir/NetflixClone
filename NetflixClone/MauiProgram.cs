@@ -34,6 +34,9 @@ public static class MauiProgram
         builder.Services.AddSingleton<HomeViewModel>();
         builder.Services.AddSingleton<MainPage>();
 
+        builder.Services.AddSingleton<NewHotViewModel>();
+        builder.Services.AddSingleton<NewHotPage>();
+
         builder.Services.AddTransientWithShellRoute<DetailMovie,DetailViewModel>(nameof(DetailMovie));
         return builder.Build();
     }

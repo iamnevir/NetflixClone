@@ -19,7 +19,6 @@ public class TmdbServices
         var genresWrapper = await httpClient.GetFromJsonAsync<GenreWrapper>($"{TmdbUrls.MovieGenres}&api_key={ApiKey}");
         return genresWrapper.Genres;
     }
-
     public async Task<IEnumerable<Media>> GetTrendingAsync() =>
         await GetMediasAsync(TmdbUrls.Trending);
 
@@ -95,9 +94,9 @@ public static class TmdbUrls
     public const string SapChieu = "3/tv/on_the_air?language=vi-EN";
 
 
-    public static string GetTrailers(int movieId, string type = "movie") => $"3/{type ?? "movie"}/{movieId}/videos?language=en-US";
-    public static string GetMovieDetails(int movieId, string type = "movie") => $"3/{type ?? "movie"}/{movieId}?language=en-US";
-    public static string GetSimilar(int movieId, string type = "movie") => $"3/{type ?? "movie"}/{movieId}/similar?language=en-US";
+    public static string GetTrailers(int movieId, string type = "movie") => $"3/{type ?? "movie"}/{movieId}/videos?language=vi-EN";
+    public static string GetMovieDetails(int movieId, string type = "movie") => $"3/{type ?? "movie"}/{movieId}?language=vi-EN";
+    public static string GetSimilar(int movieId, string type = "movie") => $"3/{type ?? "movie"}/{movieId}/similar?language=vi-EN";
 }
 public class Movie
     {
@@ -133,6 +132,7 @@ public class Movie
                 Id = id,
                 DisplayTitle = DisplayTitle,
                 MediaType = media_type,
+                Genres = genre_ids,
                 Overview = overview,
                 ReleaseDate = release_date,
                 Thumbnail = Thumbnail,

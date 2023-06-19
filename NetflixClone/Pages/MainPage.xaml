@@ -137,7 +137,7 @@
                     MediaSelected="MovieRow_MediaSelected"/>
                 <controls:MovieRow
                     Heading="Sắp ra mắt"
-                    IsLarge="False"
+                    IsLarge="True"
                     Movies="{Binding UpComing}"
                     MediaSelected="MovieRow_MediaSelected"/>
                 <controls:MovieRow
@@ -152,7 +152,7 @@
                     MediaSelected="MovieRow_MediaSelected"/>
                 <controls:MovieRow
                     Heading="Chương trình T.hình được đánh giá cao"
-                    IsLarge="False"
+                    IsLarge="True"
                     Movies="{Binding TvTopRated}"
                     MediaSelected="MovieRow_MediaSelected"/>
                 <controls:MovieRow
@@ -189,7 +189,7 @@
                         Margin="30,0,0,0"
                         Aspect="AspectFill"
                         HeightRequest="25"
-                        Source="user.png"
+                        Source="avatar"
                         WidthRequest="25" />
                     <Border
                         Margin="25,0,0,0"
