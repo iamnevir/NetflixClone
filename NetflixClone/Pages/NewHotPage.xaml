@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NetflixClone.Pages.NewHotPage"
+             xmlns:models="clr-namespace:NetflixClone.Models"
              xmlns:vm="clr-namespace:NetflixClone.ViewModels"
              xmlns:services="clr-namespace:NetflixClone.Services"
              Shell.BackgroundColor="Black"
@@ -79,29 +80,46 @@
                                TextColor="White"
                                Margin="0,7,15,0"/>
                             </HorizontalStackLayout>
-                            
+                            <CollectionView ItemsSource="{Binding Media}">
+                                <CollectionView.ItemsLayout>
+                                    <LinearItemsLayout Orientation="Vertical"
+                                                       ItemSpacing="0"></LinearItemsLayout>
+                                </CollectionView.ItemsLayout>
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate x:DataType="models:Media">
+                                       
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
                             <Grid>
-                                <HorizontalStackLayout Grid.Column="0">
+                                <HorizontalStackLayout>
                                     <VerticalStackLayout HorizontalOptions="Start"
-                                                          Margin="15,0,0,0"> 
-                                        <Label Text="Thg 6"
+                                                         WidthRequest="40"
+                                                          Margin="20,0,0,0">
+                                        <HorizontalStackLayout>
+                                            <Label Text="Thg "
+                                                   FontSize="15"
+                                               TextColor="Gray"/>
+                                            <Label Text="{Binding Media.Date}"
                                                FontSize="15"
                                                TextColor="Gray"/>
-                                        <Label Text="29"
+                                        </HorizontalStackLayout>
+                                        
+                                        <Label Text="{Binding Media.Time}"
                                                FontSize="35"
                                                FontAttributes="Bold"/>
                                     </VerticalStackLayout>
-                                   
+
                                     <VerticalStackLayout Margin="20,0,0,0"
                                                          Grid.Row="0"
                                                          Spacing="10"
                                                          WidthRequest="300">
                                         <WebView Source="{Binding Media.TrailerUrl}"
-                                                 HeightRequest="200"
+                                                 HeightRequest="150"
                                              WidthRequest="300"/>
                                         <HorizontalStackLayout>
                                             <VerticalStackLayout>
-                                                <Label Text="THỢ SĂN QUÁI VẬT"
+                                                <Label Text="{Binding Media.DisplayTitle}"
                                                    FontSize="15"
                                                    Margin="0,20,0,0"/>
                                             </VerticalStackLayout>
@@ -135,9 +153,6 @@
                                                         Text="Thông tin" />
                                             </VerticalStackLayout>
                                         </HorizontalStackLayout>
-                                        <Label Text="Tập 1 ra mắt ngày 29 tháng 6,Tập 2 ra mắt vào 27 tháng 7"
-                                               FontAttributes="Bold"
-                                               FontSize="16"/>
                                         <Label Text="{Binding Media.Overview}"
                                                TextColor="Gray"/>
                                         <HorizontalStackLayout>
@@ -155,20 +170,20 @@
                                                                    FontSize="20"
                                                                    FontAttributes="Bold"/>
                                                         </HorizontalStackLayout>
-                                                       
+
                                                     </DataTemplate>
                                                 </CollectionView.ItemTemplate>
                                             </CollectionView>
-                                           
+
 
                                         </HorizontalStackLayout>
 
                                     </VerticalStackLayout>
-                                    
+
                                 </HorizontalStackLayout>
-                                
+
                             </Grid>
-                            
+
                         </VerticalStackLayout>
                     </Grid>
 

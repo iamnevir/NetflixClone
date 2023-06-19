@@ -59,7 +59,10 @@ public partial class NewHotViewModel : ObservableObject
                                 
                             }
                         }
-                    }                   
+                    }
+                    DateTime date = DateTime.Parse(video.ReleaseDate);
+                    video.Date = date.Month.ToString();
+                    video.Time = date.Day.ToString();
                     video.Genres_Name = a.ToArray();
                     Media = video;
                 }

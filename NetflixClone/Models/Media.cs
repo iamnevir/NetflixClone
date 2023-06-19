@@ -10,7 +10,8 @@ public class Media
     public string DisplayTitle { get; set; }
     public string MediaType { get; set; } // "movie" or "tv"
     public int[] Genres { get; set; }
-
+    public string Date { get; set; }
+    public string Time { get; set; }
     public string Thumbnail { get; set; }
     public string ThumbnailSmall { get; set; }
     public string ThumbnailUrl { get; set; }
