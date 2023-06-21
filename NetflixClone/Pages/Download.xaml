@@ -7,7 +7,7 @@
     <Grid Padding="0"
           Margin="0"
           BackgroundColor="Black">
-        <Grid WidthRequest="370">
+        <Grid WidthRequest="350">
             <VerticalStackLayout Grid.Row="1"
                                  VerticalOptions="Start"
                                      Margin="0,80,0,0">
@@ -44,7 +44,7 @@
                        FontAttributes="Bold"
                        VerticalOptions="Center"
                        Margin="10,10,0,0"/>
-                        <HorizontalStackLayout Margin="120,10,10,0"
+                        <HorizontalStackLayout Margin="100,10,10,0"
                                        VerticalOptions="Center">
                             <ImageButton
                         Aspect="AspectFill"

@@ -35,6 +35,7 @@ public partial class NewHotViewModel : ObservableObject
             var genresList = await genresListTask;
             if (upComingList?.Any() == true)
             {
+                var videolist = new Media();
                 foreach (var video in upComingList)
                 {
 
@@ -64,9 +65,9 @@ public partial class NewHotViewModel : ObservableObject
                     video.Date = date.Month.ToString();
                     video.Time = date.Day.ToString();
                     video.Genres_Name = a.ToArray();
-                    Media = video;
+                    videolist = video;
                 }
-
+                Media = videolist;
 
             }
             else

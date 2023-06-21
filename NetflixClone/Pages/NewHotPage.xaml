@@ -7,6 +7,7 @@
              xmlns:services="clr-namespace:NetflixClone.Services"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Shell.NavBarIsVisible="False"
+             BackgroundColor="Black"
              x:DataType="vm:NewHotViewModel">
 <ContentPage.Resources>
         <ResourceDictionary>
@@ -32,8 +33,9 @@
     <Grid Margin="0"
           Padding="0">
         <ScrollView x:Name="sapramatTabContent" >
-            <Grid>
-                <VerticalStackLayout Grid.Row="1"
+            <Grid HorizontalOptions="Start"
+                WidthRequest="350">
+                <VerticalStackLayout
                                      VerticalOptions="Start"
                                      Margin="0,130,0,0">
 
@@ -88,7 +90,7 @@
                                                  HeightRequest="150"
                                              WidthRequest="300"/>
                                     <HorizontalStackLayout>
-                                        <VerticalStackLayout WidthRequest="130">
+                                        <VerticalStackLayout WidthRequest="100">
                                             <Label Text="{Binding Media.DisplayTitle}"
                                                    FontSize="15"
                                                    Margin="0,20,0,0"/>
@@ -177,7 +179,7 @@
                                                  HeightRequest="150"
                                              WidthRequest="300"/>
                                     <HorizontalStackLayout>
-                                        <VerticalStackLayout WidthRequest="130">
+                                        <VerticalStackLayout WidthRequest="100">
                                             <Label Text="{Binding Media.DisplayTitle}"
                                                    FontSize="15"
                                                    Margin="0,20,0,0"/>
@@ -266,7 +268,7 @@
                                                  HeightRequest="150"
                                              WidthRequest="300"/>
                                     <HorizontalStackLayout>
-                                        <VerticalStackLayout WidthRequest="130">
+                                        <VerticalStackLayout WidthRequest="100">
                                             <Label Text="{Binding Media.DisplayTitle}"
                                                    FontSize="15"
                                                    Margin="0,20,0,0"/>
@@ -355,7 +357,7 @@
                                                  HeightRequest="150"
                                              WidthRequest="300"/>
                                     <HorizontalStackLayout>
-                                        <VerticalStackLayout WidthRequest="130">
+                                        <VerticalStackLayout WidthRequest="100">
                                             <Label Text="{Binding Media.DisplayTitle}"
                                                    FontSize="15"
                                                    Margin="0,20,0,0"/>
@@ -427,8 +429,9 @@
             </Grid>
         </ScrollView>
         <ScrollView x:Name="moinguoiTabContent"
+                    HorizontalOptions="Start"
                     IsVisible="False">
-            <Grid>
+            <Grid WidthRequest="350">
                 <VerticalStackLayout Grid.Row="1"
                                      VerticalOptions="Start"
                                      Margin="0,130,0,0">
@@ -459,7 +462,7 @@
                             </CollectionView>
                             <VerticalStackLayout Margin="0,0,0,0"
                                                          Spacing="10"
-                                                         WidthRequest="370">
+                                                         WidthRequest="350">
                                     <WebView Source="{Binding Media.TrailerUrl}"
                                                  HeightRequest="200"
                                              WidthRequest="370"/>
@@ -536,7 +539,7 @@
                                 </VerticalStackLayout>
                             <VerticalStackLayout Margin="0,0,0,0"
                                                          Spacing="10"
-                                                         WidthRequest="370">
+                                                         WidthRequest="350">
                                 <WebView Source="{Binding Media.TrailerUrl}"
                                                  HeightRequest="200"
                                              WidthRequest="370"/>
@@ -586,7 +589,8 @@
                                 </HorizontalStackLayout>
                                 <Label Text="{Binding Media.Overview}"
                                                TextColor="Gray"/>
-                                <HorizontalStackLayout WidthRequest="370">
+                                <HorizontalStackLayout
+                                                           WidthRequest="370">
                                     <CollectionView ItemsSource="{Binding Media.Genres_Name}">
                                         <CollectionView.ItemsLayout>
                                             <LinearItemsLayout Orientation="Horizontal"
@@ -612,7 +616,7 @@
                             </VerticalStackLayout>
                             <VerticalStackLayout Margin="0,0,0,0"
                                                          Spacing="10"
-                                                         WidthRequest="370">
+                                                         WidthRequest="350">
                                 <WebView Source="{Binding Media.TrailerUrl}"
                                                  HeightRequest="200"
                                              WidthRequest="370"/>
@@ -662,7 +666,8 @@
                                 </HorizontalStackLayout>
                                 <Label Text="{Binding Media.Overview}"
                                                TextColor="Gray"/>
-                                <HorizontalStackLayout WidthRequest="370">
+                                <HorizontalStackLayout
+                                                           WidthRequest="370">
                                     <CollectionView ItemsSource="{Binding Media.Genres_Name}">
                                         <CollectionView.ItemsLayout>
                                             <LinearItemsLayout Orientation="Horizontal"
@@ -706,7 +711,7 @@
                        FontAttributes="Bold"
                        VerticalOptions="Center"
                        Margin="10,10,0,0"/>
-                        <HorizontalStackLayout Margin="100,10,10,0"
+                        <HorizontalStackLayout Margin="80,10,10,0"
                                        VerticalOptions="Center">
                             <ImageButton
                         Aspect="AspectFill"
@@ -738,7 +743,7 @@
                         StrokeShape="RoundRectangle 20"
                         Stroke="Black"
                         BackgroundColor="White"
-                        HeightRequest="42"
+                        HeightRequest="40"
                         x:Name="moivahotTabIni">
                             <Border.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="MoiVaHot_Tab"/>
@@ -750,18 +755,18 @@
                                WidthRequest="20" 
                                Margin="15,0,5,0" />
                                 <Label Text="Sắp ra mắt"
-                               FontSize="16"
+                               FontSize="15"
                                FontAttributes="Bold"
                                TextColor="Black"
                                Margin="0,7,15,0"
                                x:Name="MoiVaHot"/>
                             </HorizontalStackLayout>
                         </Border>
-                        <Border Margin="5,0,0,0"
+                        <Border
                         StrokeShape="RoundRectangle 20"
                         BackgroundColor="Black"
                         Stroke="Black"
-                        HeightRequest="42"
+                        HeightRequest="40"
                         x:Name="MoiNguoiDangXemTabIni">
                             <Border.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="MoiNguoiDangXem_Tab"/>
@@ -773,7 +778,7 @@
                                WidthRequest="20" 
                                Margin="15,0,5,0" />
                                 <Label Text="Mọi người đang xem"
-                               FontSize="16"
+                               FontSize="15"
                                FontAttributes="Bold"
                                TextColor="White"
                                Margin="0,7,15,0"

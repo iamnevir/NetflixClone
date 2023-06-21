@@ -179,7 +179,7 @@
                     Source="ntflx_logo"
                     VerticalOptions="Start"
                     WidthRequest="70" />
-                <HorizontalStackLayout Margin="50,10,0,0" 
+                <HorizontalStackLayout Margin="0,10,10,0" 
                                        VerticalOptions="Center">
                     <ImageButton
                         Aspect="AspectFill"
