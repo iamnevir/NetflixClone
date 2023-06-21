@@ -32,14 +32,12 @@ public partial class DetailViewModel: ObservableObject
     public ObservableCollection<Media> Similars { get; set; } = new();
     public async Task InitializeAsync()
     {
-        var similarMediasTask = _tmdbServices.GetSimilarAsync(Media.Id, Media.MediaType);
+        var similarMediasTask = _tmdbServices.GetSimilarAsync(Media.Id, Media.MediaType);      
         IsBusy = true;
         try
         {
-           
-            var trailerTeaserTask =  _tmdbServices.GetTrailersAsync(Media.Id, Media.MediaType);
-            var detailsTask =  _tmdbServices.GetMediaDetailsAsync(Media.Id, Media.MediaType);
-
+            var trailerTeaserTask = _tmdbServices.GetTrailersAsync(Media.Id, Media.MediaType);
+            var detailsTask = _tmdbServices.GetMediaDetailsAsync(Media.Id, Media.MediaType);
             var trailerTeaser = await trailerTeaserTask;
             var details=await detailsTask;
             if (trailerTeaser?.Any() == true)
@@ -55,7 +53,7 @@ public partial class DetailViewModel: ObservableObject
             }
             else
             {
-                await Shell.Current.DisplayAlert("Không thấy", "Không tìm thấy trailer", "Ok");
+                await Shell.Current.DisplayAlert("Not found", "Không tìm thấy trailer", "Ok");
             }
             if (details is not null)
             {

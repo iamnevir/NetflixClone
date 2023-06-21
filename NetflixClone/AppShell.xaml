@@ -21,9 +21,9 @@
                 Route="MainPage2" />
 
         <ShellContent
-                Title="Tệp tải xuông"
+                Title="Tệp tải xuống"
                 Icon="download"
-                ContentTemplate="{DataTemplate pages:MainPage}"
+                ContentTemplate="{DataTemplate pages:Download}"
                 Route="MainPage3" />
 
 

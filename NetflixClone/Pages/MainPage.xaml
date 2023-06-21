@@ -80,7 +80,8 @@
                                     Aspect="AspectFit"
                                     HeightRequest="25"
                                     Source="play"
-                                    WidthRequest="30" />
+                                    WidthRequest="30"
+                                    />
                                 <Label
                                     FontAttributes="Bold"
                                     FontSize="16"

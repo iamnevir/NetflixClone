@@ -22,6 +22,8 @@ public partial class NewHotPage : ContentPage
         MoiNguoiDangXem.TextColor = Colors.Black;
         moivahotTabIni.BackgroundColor = Colors.Black;
         MoiVaHot.TextColor = Colors.White;
+        sapramatTabContent.IsVisible = false;
+        moinguoiTabContent.IsVisible = true;
     }
 
     private void MoiVaHot_Tab(object sender, TappedEventArgs e)
@@ -30,5 +32,7 @@ public partial class NewHotPage : ContentPage
         MoiNguoiDangXem.TextColor = Colors.White;
         moivahotTabIni.BackgroundColor = Colors.White;
         MoiVaHot.TextColor = Colors.Black;
+        moinguoiTabContent.IsVisible = false;
+        sapramatTabContent.IsVisible = true;
     }
 }

@@ -1073,6 +1073,7 @@ C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\r
 C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\android\src\crc64e8046442d79d8c88\MainActivity.java
 C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\resizetizer\r\drawable\avatar.png
 C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\resizetizer\r\drawable\bell.png
+C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\android\assets\Maui.Skeleton.dll
 C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\android\assets\mscorlib.dll
 C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\android\assets\System.Data.Common.dll
@@ -1086,3 +1087,5 @@ C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\a
 C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\android\assets\System.Runtime.Extensions.dll
 C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\android\assets\System.Xml.dll
+C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\resizetizer\r\drawable\settings.png
+C:\Users\trick\source\repos\NetflixClone\NetflixClone\obj\Debug\net7.0-android\resizetizer\r\drawable\phim.png

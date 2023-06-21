@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NetflixClone.Pages.Download"
+              Shell.NavBarIsVisible="False"
+             >
+    <Grid Padding="0"
+          Margin="0"
+          BackgroundColor="Black">
+        <Grid WidthRequest="370">
+            <VerticalStackLayout Grid.Row="1"
+                                 VerticalOptions="Start"
+                                     Margin="0,80,0,0">
+                <HorizontalStackLayout Spacing="10">
+                    <Image Source="settings"
+                           />
+                    <Label Text="Tải xuống thông minh"
+                           />
+                </HorizontalStackLayout>
+                <Label Text="Bật tính năng tải xuống cho bạn"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       Margin="0,40,0,0"/>
+                <Label Text="Chúng tôi sẽ tải xuống phim và chương trình dành riêng cho bạn, để bạn luôn có nội dung để xem."
+                       TextColor="Gray"/>
+                <Image Source="phim"/>
+                <Button Text="Thiết lập"/>
+                <Button Text="Tìm thêm nội dung để tải xuống"
+                        BackgroundColor="Gray"
+                        WidthRequest="300"
+                        HeightRequest="40"
+                        Margin="0,50,0,0"
+                        Clicked="Button_Clicked"/>
+            </VerticalStackLayout>
+        </Grid>
+        <Grid HeightRequest="60" 
+              VerticalOptions="Start">
+            <FlexLayout JustifyContent="SpaceBetween"
+                        BackgroundColor="Black">
+                <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Tệp tải xuống" 
+                       FontSize="25"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"
+                       Margin="10,10,0,0"/>
+                        <HorizontalStackLayout Margin="120,10,10,0"
+                                       VerticalOptions="Center">
+                            <ImageButton
+                        Aspect="AspectFill"
+                        HeightRequest="25"
+                        Source="search.png"
+                        WidthRequest="25" 
+                        Margin="0,0,10,0"/>
+                            <ImageButton
+                        Margin="20,0,0,0"
+                        Aspect="AspectFill"
+                        HeightRequest="25"
+                        Source="avatar"
+                        WidthRequest="25"
+                        CornerRadius="4"/>
+
+                        </HorizontalStackLayout>
+                    </HorizontalStackLayout>
+
+                   
+                </VerticalStackLayout>
+
+
+            </FlexLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

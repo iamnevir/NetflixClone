@@ -37,6 +37,8 @@ public static class MauiProgram
         builder.Services.AddSingleton<NewHotViewModel>();
         builder.Services.AddSingleton<NewHotPage>();
 
+        builder.Services.AddSingleton<Download>();
+
         builder.Services.AddTransientWithShellRoute<DetailMovie,DetailViewModel>(nameof(DetailMovie));
         return builder.Build();
     }

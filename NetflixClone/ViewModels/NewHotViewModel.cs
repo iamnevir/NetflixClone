@@ -46,7 +46,7 @@ public partial class NewHotViewModel : ObservableObject
                     {
                         var mda = upComing.FirstOrDefault(t => t.type == "Trailer");
                         mda ??= upComing.First();
-                        video.TrailerUrl = DetailViewModel.GenerateYtbUrl(mda.key);
+                        video.TrailerUrl = GenerateYtbUrl(mda.key);
                     }
                     var a = new List<string>();
                     foreach (var v in video.Genres)
@@ -82,4 +82,5 @@ public partial class NewHotViewModel : ObservableObject
         }
 
     }
+    public static string GenerateYtbUrl(string key) => $"https://www.youtube.com/embed/{key}";
 }

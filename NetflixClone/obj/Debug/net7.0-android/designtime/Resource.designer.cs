@@ -21717,40 +21717,46 @@ namespace NetflixClone
 			public const int ntflx_logo = 2131165409;
 			
 			// aapt resource value: 0x7F0700E2
-			public const int play = 2131165410;
+			public const int phim = 2131165410;
 			
 			// aapt resource value: 0x7F0700E3
-			public const int plus = 2131165411;
+			public const int play = 2131165411;
 			
 			// aapt resource value: 0x7F0700E4
-			public const int popcorn = 2131165412;
+			public const int plus = 2131165412;
 			
 			// aapt resource value: 0x7F0700E5
-			public const int rate = 2131165413;
+			public const int popcorn = 2131165413;
 			
 			// aapt resource value: 0x7F0700E6
-			public const int search = 2131165414;
+			public const int rate = 2131165414;
 			
 			// aapt resource value: 0x7F0700E7
-			public const int share = 2131165415;
+			public const int search = 2131165415;
 			
 			// aapt resource value: 0x7F0700E8
-			public const int splash = 2131165416;
+			public const int settings = 2131165416;
 			
 			// aapt resource value: 0x7F0700E9
-			public const int test_level_drawable = 2131165417;
+			public const int share = 2131165417;
 			
 			// aapt resource value: 0x7F0700EA
-			public const int tooltip_frame_dark = 2131165418;
+			public const int splash = 2131165418;
 			
 			// aapt resource value: 0x7F0700EB
-			public const int tooltip_frame_light = 2131165419;
+			public const int test_level_drawable = 2131165419;
 			
 			// aapt resource value: 0x7F0700EC
-			public const int user = 2131165420;
+			public const int tooltip_frame_dark = 2131165420;
 			
 			// aapt resource value: 0x7F0700ED
-			public const int userr = 2131165421;
+			public const int tooltip_frame_light = 2131165421;
+			
+			// aapt resource value: 0x7F0700EE
+			public const int user = 2131165422;
+			
+			// aapt resource value: 0x7F0700EF
+			public const int userr = 2131165423;
 			
 			static Drawable()
 			{

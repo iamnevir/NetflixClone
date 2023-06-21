@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TsE1THWd0iVJ1HN++Z26NjNONV9bTXU2qODCzEKWeQh9Z7VUmF8072o17fBfRBK1/tLrdNc3aEeNbdMHEM+BTA==",
+  "dgSpecHash": "zPIrZzxGxhsEkuGh5+soV01OQbevfvzuHb5SSzYnK5n8xf5hi1cdq1tln5sfKxUrWcgh+E/kA+RRLTcZLp0i1A==",
   "success": true,
   "projectFilePath": "C:\\Users\\trick\\source\\repos\\NetflixClone\\NetflixClone\\NetflixClone.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\trick\\.nuget\\packages\\communitytoolkit.maui.core\\5.2.0\\communitytoolkit.maui.core.5.2.0.nupkg.sha512",
     "C:\\Users\\trick\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0\\communitytoolkit.mvvm.8.2.0.nupkg.sha512",
     "C:\\Users\\trick\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
+    "C:\\Users\\trick\\.nuget\\packages\\horusstudio.maui.skeleton\\2.0.0\\horusstudio.maui.skeleton.2.0.0.nupkg.sha512",
     "C:\\Users\\trick\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\trick\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\trick\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",

@@ -60,6 +60,19 @@
           }
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -2049,6 +2062,19 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
+          }
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -4044,6 +4070,19 @@
           }
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -6033,6 +6072,19 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
+          }
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -8028,6 +8080,19 @@
           }
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -10017,6 +10082,19 @@
         "runtime": {
           "lib/net6.0-android31.0/GoogleGson.dll": {
             "related": ".aar;.xml"
+          }
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -12012,6 +12090,19 @@
           }
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -14004,6 +14095,19 @@
           }
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -15983,6 +16087,19 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -16232,6 +16349,19 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -16485,6 +16615,19 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -16734,6 +16877,19 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -16987,6 +17143,19 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -17236,6 +17405,19 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -17489,6 +17671,19 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -17738,6 +17933,19 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -17991,6 +18199,19 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -18240,6 +18461,19 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -18493,6 +18727,19 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -18742,6 +18989,19 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -18995,6 +19255,19 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -19244,6 +19517,19 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -19497,6 +19783,19 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -19746,6 +20045,19 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -20000,6 +20312,19 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -20416,6 +20741,19 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -20794,6 +21132,19 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -21176,6 +21527,19 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -21554,6 +21918,19 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -21936,6 +22313,19 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -22316,6 +22706,19 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -22694,6 +23097,19 @@
         },
         "build": {
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "HorusStudio.Maui.Skeleton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Maui.Skeleton.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Configuration/7.0.0": {
@@ -23137,6 +23553,19 @@
         "lib/net6.0-android31.0/GoogleGson.aar",
         "lib/net6.0-android31.0/GoogleGson.dll",
         "lib/net6.0-android31.0/GoogleGson.xml"
+      ]
+    },
+    "HorusStudio.Maui.Skeleton/2.0.0": {
+      "sha512": "afjshuB9nNDBm73JV7h1SzHraz6AEibskMqsZiWZIwX0tm+qd78/gkedmFRHObW2qSAZh0/j0IhWOiP9SDdb5g==",
+      "type": "package",
+      "path": "horusstudio.maui.skeleton/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "horusstudio.maui.skeleton.2.0.0.nupkg.sha512",
+        "horusstudio.maui.skeleton.nuspec",
+        "lib/net6.0/Maui.Skeleton.dll",
+        "lib/net6.0/Maui.Skeleton.xml"
       ]
     },
     "Microsoft.Extensions.Configuration/7.0.0": {
@@ -26411,6 +26840,7 @@
     "net7.0-android33.0": [
       "CommunityToolkit.Maui >= 5.2.0",
       "CommunityToolkit.Mvvm >= 8.2.0",
+      "HorusStudio.Maui.Skeleton >= 2.0.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Http >= 7.0.0",
@@ -26433,6 +26863,7 @@
     "net7.0-ios16.1": [
       "CommunityToolkit.Maui >= 5.2.0",
       "CommunityToolkit.Mvvm >= 8.2.0",
+      "HorusStudio.Maui.Skeleton >= 2.0.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Http >= 7.0.0",
@@ -26444,6 +26875,7 @@
     "net7.0-maccatalyst16.1": [
       "CommunityToolkit.Maui >= 5.2.0",
       "CommunityToolkit.Mvvm >= 8.2.0",
+      "HorusStudio.Maui.Skeleton >= 2.0.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Http >= 7.0.0",
@@ -26455,6 +26887,7 @@
     "net7.0-windows10.0.19041": [
       "CommunityToolkit.Maui >= 5.2.0",
       "CommunityToolkit.Mvvm >= 8.2.0",
+      "HorusStudio.Maui.Skeleton >= 2.0.0",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Http >= 7.0.0",
@@ -26543,6 +26976,10 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.2.0, )"
+          },
+          "HorusStudio.Maui.Skeleton": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -26674,6 +27111,10 @@
             "target": "Package",
             "version": "[8.2.0, )"
           },
+          "HorusStudio.Maui.Skeleton": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
             "version": "[7.0.0, )",
@@ -26748,6 +27189,10 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.2.0, )"
+          },
+          "HorusStudio.Maui.Skeleton": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -26824,6 +27269,10 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.2.0, )"
+          },
+          "HorusStudio.Maui.Skeleton": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
