@@ -20,9 +20,7 @@ public static class MauiProgram
                 fonts.AddFont("Poppins-Semibold.ttf", "PoppinsSemibold");
             });
 
-#if DEBUG
-        builder.Logging.AddDebug();
-#endif
+
         builder.Services.AddHttpClient(TmdbServices.TmdbHttpClientName, httpClient =>
         httpClient.BaseAddress = new Uri("https://api.themoviedb.org"));
 

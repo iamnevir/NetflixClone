@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace NetflixCloneMAUI;
+namespace NetflixClone;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

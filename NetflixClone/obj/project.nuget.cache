@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zPIrZzxGxhsEkuGh5+soV01OQbevfvzuHb5SSzYnK5n8xf5hi1cdq1tln5sfKxUrWcgh+E/kA+RRLTcZLp0i1A==",
+  "dgSpecHash": "EXorfDXZwBTLrB8lS0cSE0b92kmjiSwq24gmGU0rQPK56dcLkFvU+ULGxjan4k+BG03AzwTZVO8jhXx6ta2XvQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\trick\\source\\repos\\NetflixClone\\NetflixClone\\NetflixClone.csproj",
   "expectedPackageFiles": [
@@ -106,6 +106,7 @@
     "C:\\Users\\trick\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.7.20.1\\xamarin.kotlin.stdlib.jdk8.1.7.20.1.nupkg.sha512",
     "C:\\Users\\trick\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.6.4.1\\xamarin.kotlinx.coroutines.android.1.6.4.1.nupkg.sha512",
     "C:\\Users\\trick\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.4.1\\xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
+    "C:\\Users\\trick\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\7.0.7\\microsoft.netcore.app.crossgen2.win-x64.7.0.7.nupkg.sha512",
     "C:\\Users\\trick\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.28\\microsoft.windows.sdk.net.ref.10.0.19041.28.nupkg.sha512",
     "C:\\Users\\trick\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.7\\microsoft.aspnetcore.app.runtime.win-x64.7.0.7.nupkg.sha512",
     "C:\\Users\\trick\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.7\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.7.nupkg.sha512",

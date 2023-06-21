@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace NetflixCloneMAUI;
+namespace NetflixClone;
 
 public class Program
 {

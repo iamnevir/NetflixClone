@@ -1,0 +1,1 @@
+C:\Users\trick\source\repos\NetflixClone\NetflixClone\NetflixClone.csproj;x64
